@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".tambahjadwal_activity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="100dp"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:text="Tambah Jadwal"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Nama"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/etnama"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Keterangan"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/etketerangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:maxLines="5"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"
+                    android:minHeight="145dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="start"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Tanggal"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                
+                <EditText
+                    android:id="@+id/ettanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:hint="DAY / MONTH / YEAR"
+                    android:textColorHint="@color/grey"
+                    android:editable="false"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Jam"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/etjam"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:hint="HOURS : MINUTES"
+                    android:textColorHint="@color/grey"
+                    android:editable="false"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:padding="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btntambah"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="SIMPAN JADWAL"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:backgroundTint="@color/addbutton"
+                    app:cornerRadius="30dp"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
